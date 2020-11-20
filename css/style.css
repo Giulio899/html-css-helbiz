@@ -1,4 +1,77 @@
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .container {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
+}
+
+/* Inizio header */
+header .header-top {
+  height: 60px;
+  line-height: 60px;
+}
+
+/* Inizio header-top */
+header .header-top img {
+  width: 50%;
+  vertical-align: middle;
+}
+
+header .header-top .menu-inline {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+header .header-top nav .menu-inline {
+  text-align: right;
+}
+
+header .header-top .menu-inline a {
+  color: black;
+}
+
+header .menu-inline.right li {
+  margin: 0 3px;
+}
+
+header .menu-inline.right li:not(:last-child) a {
+  border-right: 1px solid black;
+  padding-right: 8px;
+}
+/* /header-top */
+/* /header */
+
+/* Inizio jumbotron */
+header .jumbo {
+  height: 600px;
+  background-image: url(../img/helbiz-go.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
+header .jumbo .centrato {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .jumbo h1 {
+  font-size: 3em;
+}
+
+header .jumbo p {
+  padding: 20px 0;
+}
+
+header .jumbo img {
+  height: 50px;
 }

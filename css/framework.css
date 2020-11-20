@@ -40,6 +40,20 @@
   float: left;
 }
 
+/* menu di navigazione */
+.menu-inline {
+  list-style-type: none;
+}
+.menu-inline li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* link senza sottolineatura di default*/
+a {
+  text-decoration: none;
+}
+
 /* allineamento */
 .text-right {
   text-align: right;
@@ -128,7 +142,7 @@
 
 /* MEDIA QUERY SMALL (< 768px) */
 @media screen and (max-width:768px){
-  
+
   /* framework colonne */
   .col-sm-1 {width: calc(100% / 12 * 1);}
   .col-sm-2 {width: calc(100% / 12 * 2);}
