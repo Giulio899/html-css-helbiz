@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 75%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -80,5 +80,4 @@ header .jumbo img {
 
 .fa-bars {
   color: black;
-  font-size: 8em;
 }
