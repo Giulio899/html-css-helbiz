@@ -43,7 +43,6 @@ header .menu-inline.right li:not(:last-child) a {
   padding-right: 8px;
 }
 /* /header-top */
-/* /header */
 
 /* Inizio jumbotron */
 header .jumbo {
@@ -74,4 +73,12 @@ header .jumbo p {
 
 header .jumbo img {
   height: 50px;
+}
+
+/* /jumbotron */
+/* /header */
+
+.fa-bars {
+  color: black;
+  font-size: 8em;
 }
