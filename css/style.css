@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  max-width: 992px;
   margin: 0 auto;
 }
 
@@ -16,7 +16,8 @@ header .header-top {
 
 /* Inizio header-top */
 header .header-top img {
-  width: 50%;
+  height: 30px;
+  margin-left: 20px;
   vertical-align: middle;
 }
 
@@ -80,4 +81,7 @@ header .jumbo img {
 
 .fa-bars {
   color: black;
+  font-size: 1.5em;
+  margin-right: 20px;
+  vertical-align: middle;
 }
