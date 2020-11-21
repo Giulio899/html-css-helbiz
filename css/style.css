@@ -3,18 +3,51 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* proprietà generali */
+h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+small {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+  /* /proprietà generali */
+
+
 .container {
-  max-width: 992px;
+  max-width: 1392px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Inizio header */
+
 header .header-top {
   height: 60px;
   line-height: 60px;
 }
 
 /* Inizio header-top */
+
+header .header-top .fa-bars {
+  color: black;
+  font-size: 1.5em;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
 header .header-top img {
   height: 30px;
   margin-left: 20px;
@@ -75,13 +108,138 @@ header .jumbo p {
 header .jumbo img {
   height: 50px;
 }
-
 /* /jumbotron */
 /* /header */
 
-.fa-bars {
-  color: black;
-  font-size: 1.5em;
-  margin-right: 20px;
-  vertical-align: middle;
+/* Inizio main */
+/* Inizio stripe 1 */
+main #stripe1 {
+  text-align: center;
+  padding: 50px 0;
+}
+
+
+main #stripe1 .box-left,
+main #stripe1 .box-right {
+  padding: 50px 15px;
+  background-color: #FAFAFA;
+  /* width: 48.5%; */
+}
+
+/* main #stripe1 .box-left {
+  margin-right: 3%;
+} */
+
+main #stripe1 .box-left h2:after {
+  content: "go";
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+main #stripe1 .box-right h2:after {
+  content: "bike";
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+main #stripe1 p {
+  margin: 20px 0;
+  font-size: 1.3em;
+}
+
+main #stripe1 a {
+  display: block;
+  color: #0070C8;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+main #stripe1 img {
+  height: 330px;
+}
+
+/* Inizio stripe 2 */
+#stripe2 {
+  position: relative;
+}
+
+#stripe2 .box-top {
+  height: 500px;
+  background-image: url("../img/banner-stripe-2.jpg");
+  background-size: cover;
+}
+
+#stripe2 .row .row .box-left,
+#stripe2 .row .row .box-right {
+  padding: 100px 0;
+}
+
+#stripe2 .row .row .box-left {
+  padding-right: 100px;
+}
+
+/* #stripe2 .row .row .box-left {
+  text-align: right;
+} */
+
+#stripe2 .row .row img {
+  height: 500px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media screen and (min-width:992px) {
+  main #stripe1 .box-left,
+  main #stripe1 .box-right {
+    width: 48.5%;
+  }
+
+  main #stripe1 .box-left {
+    margin-right: 3%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  main #stripe1 .box-left,
+  main #stripe1 .box-right {
+    width: 48.5%;
+  }
+
+  main #stripe1 .box-left {
+    margin-right: 3%;
+  }
+
+  main #stripe1 img {
+    height: 250px;
+  }
+
+  #stripe2 .row .row .box-left,
+  #stripe2 .row .row .box-right {
+    margin: 0;
+  }
+
+  #stripe2 .row .row .box-left {
+    padding-left: 20px;
+  }
+
+
+  #stripe2 .row .row .box-right {
+    margin-left: calc(100% / 12 * 4);
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  main #stripe1 .box-left {
+    margin-bottom: 20px;
+  }
 }
