@@ -19,6 +19,10 @@ h4 {
   font-weight: 600;
 }
 
+p {
+  font-size: 1.3em;
+}
+
 small {
   font-size: 1.1em;
   font-weight: 400;
@@ -29,7 +33,7 @@ small {
 .container {
   max-width: 1392px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 /* Inizio header */
@@ -144,7 +148,6 @@ main #stripe1 .box-right h2:after {
 
 main #stripe1 p {
   margin: 20px 0;
-  font-size: 1.3em;
 }
 
 main #stripe1 a {
@@ -178,6 +181,10 @@ main #stripe1 img {
   padding-right: 100px;
 }
 
+#stripe2 .row .row .box-right h4 {
+  margin-bottom: 10px;
+}
+
 /* #stripe2 .row .row .box-left {
   text-align: right;
 } */
@@ -189,6 +196,100 @@ main #stripe1 img {
   left: 50%;
   transform: translateX(-50%);
 }
+/* /stripe 2 */
+
+
+/* Inizio stripe 3 */
+#stripe3 .row {
+  background-image: url('../img/scooter.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+  color: white;
+}
+
+#stripe3 .row [class*="col-"] {
+  height: 500px;
+  position: relative;
+}
+
+#stripe3 .row .centrato {
+  width: 330px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+#stripe3 .row .centrato h2 {
+  font-size: 2.5em;
+}
+
+#stripe3 .row .centrato p {
+  margin: 40px 0;
+}
+
+#stripe3 .row .centrato a {
+  color: white;
+}
+/* /stripe 3 */
+
+
+/* Inizio stripe 4 */
+#stripe4 {
+  color: white;
+  text-align: center;
+  margin: 30px 0;
+}
+
+#stripe4 h2 {
+  font-size: 2.5em;
+}
+
+#stripe4 p {
+  margin: 20px 0;
+}
+
+#stripe4 a {
+  color: white;
+}
+
+#stripe4 .row {
+  height: 500px;
+}
+
+#stripe4 .row .box-left,
+#stripe4 .row .box-right {
+  padding-top: 40px;
+}
+
+#stripe4 .row .box-left {
+  height: 100%;
+  background-image: url('../img/iphone.png');
+  background-repeat: no-repeat;
+  background-color: #394B5C;
+  background-size: 270px auto;
+  background-position: center 240px;
+  margin-bottom: 20px;
+}
+
+#stripe4 .row .box-right {
+  height: 100%;
+  background-image: url('../img/globe.jpg');
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width:992px) {
@@ -200,15 +301,29 @@ main #stripe1 img {
   main #stripe1 .box-left {
     margin-right: 3%;
   }
-}
 
-@media screen and (min-width:768px) and (max-width:992px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 0;
+  #stripe4 .row .box-left,
+  #stripe4 .row .box-right {
+    width: 48.5%;
   }
 
+  #stripe4 .row .box-left {
+    margin-right: 3%;
+  }
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+  .container {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  /* Inizio stripe 1 */
   main #stripe1 .box-left,
   main #stripe1 .box-right {
     width: 48.5%;
@@ -221,7 +336,9 @@ main #stripe1 img {
   main #stripe1 img {
     height: 250px;
   }
+  /* /stripe 1 */
 
+  /* Inizio stripe 2 */
   #stripe2 .row .row .box-left,
   #stripe2 .row .row .box-right {
     margin: 0;
@@ -231,15 +348,96 @@ main #stripe1 img {
     padding-left: 20px;
   }
 
-
   #stripe2 .row .row .box-right {
     margin-left: calc(100% / 12 * 4);
+  }
+  /* /stripe 2 */
+
+  /* Inizio stripe 3 */
+  #stripe3 .row .centrato h2 {
+    font-size: 2em;
+  }
+  /* /stripe 3 */
+
+  /* Inizio stripe 4 */
+  #stripe4 .row .box-left,
+  #stripe4 .row .box-right {
+    width: 48.5%;
+    padding: 40px 20px;
+  }
+
+  #stripe4 .row .box-left {
+    margin-right: 3%;
   }
 
 }
 
+
 @media screen and (max-width:768px) {
+
+  html, body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  /* Inizio stripe 1 */
   main #stripe1 .box-left {
     margin-bottom: 20px;
   }
+
+  main #stripe1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* /stripe 1 */
+
+  /* Inizio stripe 2 */
+  #stripe2 .row .row {
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+
+  #stripe2 .row .row .box-left,
+  #stripe2 .row .row .box-right {
+    padding: 0;
+    margin: 0;
+  }
+
+  #stripe2 .row .row .box-left {
+    margin-top: 300px;
+    margin-bottom: 30px;
+  }
+  /* /stripe 2 */
+
+  /* Inizio stripe 3 */
+  #stripe3 .row [class*="col-"] {
+    padding: 0;
+    margin: 0;
+  }
+
+  #stripe3 .row .centrato {
+    padding: 0 30px;
+    left: 50%;
+  }
+  /* /stripe 3 */
+
+  /* Inizio stripe 4 */
+  #stripe4 .row .box-left,
+  #stripe4 .row .box-right {
+    padding: 40px 20px;
+  }
+  /* /stripe 4 */
+
+
+
+
 }
