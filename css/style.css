@@ -27,6 +27,11 @@ small {
   font-size: 1.1em;
   font-weight: 400;
 }
+
+ul {
+  list-style-type: none;
+}
+
   /* /proprietà generali */
 
 
@@ -255,17 +260,13 @@ main #stripe1 img {
   color: white;
 }
 
-#stripe4 .row {
-  height: 500px;
-}
-
 #stripe4 .row .box-left,
 #stripe4 .row .box-right {
   padding-top: 40px;
 }
 
 #stripe4 .row .box-left {
-  height: 100%;
+  height: 500px;
   background-image: url('../img/iphone.png');
   background-repeat: no-repeat;
   background-color: #394B5C;
@@ -275,13 +276,104 @@ main #stripe1 img {
 }
 
 #stripe4 .row .box-right {
-  height: 100%;
+  height: 500px;
   background-image: url('../img/globe.jpg');
   background-size: cover;
 }
+/* /stripe 4 */
 
+/* Inizio stripe 5 */
+#stripe5 {
+  background-image: url('../img/helbiz-collage.jpg');
+  background-position: center;
+  height: 450px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
 
+#stripe5 .box {
+  width: 450px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+#stripe5 .box .social {
+  margin-top: 10px;
+}
+
+#stripe5 .box .social i {
+  padding: 0 10px;
+  font-size: 2em;
+  color: black;
+}
+/* /stripe 5 */
+/* /main */
+
+/* Inizio footer */
+/* Inizio footer-top */
+footer {
+  background-color: #000;
+  padding: 100px 0;
+}
+
+footer .footer-top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+footer .footer-top ul li:first-child {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+
+footer .footer-top ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-top ul li a {
+  margin-bottom: 15px;
+  color: #808080;
+}
+
+footer .footer-top img {
+  width: 130px;
+}
+/* /footer-top */
+
+/* Inizio footer-center */
+footer .footer-center {
+  padding: 40px 0;
+  border-bottom: 1px solid #1c1c1c;
+  color: white;
+}
+
+footer .footer-center a {
+  color: white;
+}
+
+footer .footer-center i {
+  padding: 0 3px;
+  font-size: 1.4em;
+}
+/* /footer-center */
+
+/* Inizio footer bottom */
+footer .footer-bottom {
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer .footer-bottom img {
+  height: 40px;
+}
 
 
 
@@ -386,7 +478,7 @@ main #stripe1 img {
   .container {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 35px;
   }
 
   /* Inizio stripe 1 */
@@ -436,6 +528,37 @@ main #stripe1 img {
     padding: 40px 20px;
   }
   /* /stripe 4 */
+
+  /* Inizio stripe 5 */
+  #stripe5 .box {
+    width: 280px;
+  }
+  /* /stripe 5 */
+
+  /* Inizio footer */
+  /* Inizio footer-top */
+  footer .footer-top img {
+    width: 100px;
+  }
+
+  footer .footer-top ul {
+    margin-bottom: 40px;
+  }
+
+  footer ul:not(.no-p) {
+    padding-left: 20px;
+  }
+
+  /* Inizio footer-center */
+
+  footer .footer-center i {
+    padding: 0 1px;
+    font-size: 1em;
+  }
+
+  footer .footer-center .col-sm-6:nth-child(2) {
+    margin-bottom: 40px;
+  }
 
 
 
